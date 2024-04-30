@@ -16,13 +16,20 @@
         <h1>Bienvenido a "Cuanto debo sacar?"</h1><br><br><br><br><br>
       </div>
     </header>
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">Nota Primer Corte</span>
+      <input type="number" id="nota_1" class="form-control" placeholder="0.0" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">Nota Segundo Corte</span>
+      <input type="number" id="nota_2" class="form-control" placeholder="0.0" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
 
     <div class="calculator">
-      <input type="text" id="nota_1">
-      <input type="text" id="nota_2">
       <button onclick="proceso()">Cuanto debo sacar?</button>
       <div id="result"></div>
     </div>
+
     <script src="script.js"></script>
     
     <footer class="footer" style="border-radius: 10px;">

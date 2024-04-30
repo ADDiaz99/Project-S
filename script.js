@@ -9,6 +9,10 @@ function proceso() {
         }
 
         else if(nota_1 * 0.3 + nota_2 * 0.3 + nota_3 * 0.4 >= 3){
+            if(nota_3 > 5){
+                result = "Deberías cancelar la materia, para pasar necesitas: " + nota_3.toFixed(1);
+                break;
+            }
             result = "Para pasar necesitas: " + nota_3.toFixed(1) + "\nMucha suerte!"
             break;
         }

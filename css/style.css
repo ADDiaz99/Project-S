@@ -1,7 +1,47 @@
-.calculator{
+.input-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-group-text {
+  width: 200px; /* Adjust the width of the labels */
+  text-align: center; /* Center the text */
+}
+
+.form-control {
+  width: 100px; /* Adjust the width of the input fields */
+}
+
+.calculator {
+  margin-top: 10px;
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.calculator result {
+  margin-top: 10px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 3px 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .maintitle{
