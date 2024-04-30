@@ -4,10 +4,14 @@ function proceso() {
     let result = 0;
     
     for(let nota_3 = 0; nota_3 < 8; nota_3 += 0.1){
-        if(nota_1 * 0.3 + nota_2 * 0.3 + nota_3 * 0.4 >= 3){
-            result = nota_3;
+        if(nota_1 * 0.3 + nota_2 * 0.3 >= 3){
+            result = "Ya pasaste!\n";
+        }
+
+        else if(nota_1 * 0.3 + nota_2 * 0.3 + nota_3 * 0.4 >= 3){
+            result = "Para pasar necesitas: " + nota_3.toFixed(1) + "\nMucha suerte!"
             break;
         }
     }
-    document.getElementById("result").innerHTML = "Para pasar necesitas: " + result.toFixed(1) + "\nMucha suerte! ";
+    document.getElementById("result").innerHTML = result;
 }
